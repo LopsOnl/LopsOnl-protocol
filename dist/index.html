@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>LOPS | the little blocky operator, Solana-born</title>
+<meta name="description" content="LOPS is a small blocky AI operator built on Solana. Live market board, always on.">
+<meta property="og:title" content="LOPS">
+<meta property="og:description" content="A small blocky operator on Solana, with a live market board.">
+<meta property="og:image" content="assets/lops-logo.png">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<script type="application/json" id="lops-register">{"ca":{"state":"absent"},"x":{"state":"absent"},"github":{"state":"absent"},"market":{"state":"stated","chain":"solana","rpc":"https://solana-rpc.publicnode.com","boosts":"https://api.dexscreener.com/token-boosts/top/v1","tokens":"https://api.dexscreener.com/tokens/v1/solana/","pairs":"https://api.dexscreener.com/latest/dex/tokens/","pump":"https://frontend-api.pump.fun/coins/"}}</script>
+
+<div class="top">
+  <header class="nav">
+    <div class="wrap">
+      <a class="logo" href="#top" aria-label="LOPS home"><img src="assets/lops-mark.png" width="34" height="34" alt="LOPS logo" id="navLogo"><span class="word">LOPS</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Sections">
+        <a href="#market" data-nav="market">Board</a>
+        <a href="#crew" data-nav="crew">Crew</a>
+        <a href="#loop" data-nav="loop">Loop</a>
+        <a href="#skills" data-nav="skills">Skills</a>
+        <a href="#path" data-nav="path">Path</a>
+      </nav>
+      <div class="nav-right">
+        <button class="menu-toggle" id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+        <span class="social is-inert" data-social="X" data-state="absent" role="img" aria-disabled="true" aria-label="X (not linked yet)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></span><span class="social is-inert" data-social="GitHub" data-state="absent" role="img" aria-disabled="true" aria-label="GitHub (not linked yet)"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg></span>
+      </div>
+    </div>
+  </header>
+  <div class="ca-bar" data-state="absent"><div class="wrap"><span class="ca-k">CA</span><span class="ca-v" aria-disabled="true" data-ca>Contract address will appear here once published</span><span class="ca-copy" aria-disabled="true">copy</span></div></div>
+</div>
+
+<main id="top">
+  <div class="hero-wrap">
+    <div class="mesh" aria-hidden="true"><div class="pl layer" data-depth="0.5"><i class="blob b1"></i></div><div class="pl layer" data-depth="0.9"><i class="blob b2"></i></div><div class="pl layer" data-depth="1.3"><i class="blob b3"></i></div></div>
+    <div class="wrap">
+      <div class="hero">
+        <div class="layer" data-depth="0.3">
+          <span class="eyebrow"><span class="pill" data-state="load" id="heroPill" style="border:0;padding:0;min-height:0"><i class="live-dot"></i><span data-pill-text>connecting</span></span> · mainnet · Solana · pocket operator</span>
+          <img class="hero-logo" src="assets/lops-logo.png" width="220" height="220" alt="LOPS logo: two square eyes and a flat mouth" id="heroLogo">
+          <p class="tagline">little operator, big follow-through<span class="caret"></span></p>
+          <h1>Two eyes, one mouth, <em>zero idle time.</em></h1>
+          <p class="lead"><b>LOPS</b>: a pocket-sized AI worker wearing a blocky grin. It studies your working style, files a note per correction, and quietly absorbs the dull stuff.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#market">Watch the board ↓</a>
+            <a class="btn btn-ghost" href="#crew">Meet the crew</a>
+          </div>
+          <div class="hero-meta">
+            <div><b>10</b>tokens ranked</div>
+            <div><b>60s</b>refresh pace</div>
+            <div><b>3</b>blocks, one face</div>
+          </div>
+        </div>
+        <div class="term layer spot" data-depth="0.8" data-reveal>
+          <i class="spotlight"></i>
+          <div class="term-bar"><span class="t">lops ~/desk</span><button class="r" id="replay" type="button">↻ replay</button></div>
+          <div class="term-body" id="demo" aria-live="off"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <!-- MARKET BOARD -->
+    <div class="section" id="market">
+      <div class="section-head" data-reveal>
+        <h3>Market board</h3>
+        <p>Ten Solana tokens attracting the loudest boosts, refreshed in rhythm. LOPS reserves seat one.</p>
+      </div>
+      <div class="board" data-reveal>
+        <div class="board-head">
+          <span class="pill" data-state="load" id="marketPill"><i class="live-dot"></i><span data-pill-text>connecting</span></span>
+          <span id="marketMeta" class="dim">source: open dex feed</span>
+        </div>
+        <div class="ticker" id="ticker" aria-label="Live ticker"><div class="ticker-track" id="tickerTrack"></div></div>
+        <div class="mhead" aria-hidden="true"><span>#</span><span>Token</span><span>Price</span><span>Move</span><span>Turnover</span><span>Depth</span></div>
+        <div id="rows" role="list">
+          <div class="mrow own ready settled placeholder" role="listitem" data-own="absent"><span class="rank" data-real>1</span><div class="who" data-real><span class="tile has-brand"><img src="assets/lops-mark.png" alt="LOPS" width="36" height="36"></span><div class="nm"><b>LOPS</b><span>awaiting contract</span></div></div><span class="num price" data-real>· · · · ·</span><span class="num chg" data-real>· · · · ·</span><span class="num vol" data-real>· · · · ·</span><span class="num liq" data-real>· · · · ·</span></div>
+          <div class="mrow" data-skel-row role="listitem" style="--i:0"><span class="rank">2</span><div class="who"><span class="sk t"></span><div class="nm" style="flex:1"><span class="sk l"></span></div></div><span class="num price"><span class="sk"></span></span><span class="num chg"><span class="sk"></span></span><span class="num vol"><span class="sk"></span></span><span class="num liq"><span class="sk"></span></span></div>
+<div class="mrow" data-skel-row role="listitem" style="--i:1"><span class="rank">3</span><div class="who"><span class="sk t"></span><div class="nm" style="flex:1"><span class="sk l"></span></div></div><span class="num price"><span class="sk"></span></span><span class="num chg"><span class="sk"></span></span><span class="num vol"><span class="sk"></span></span><span class="num liq"><span class="sk"></span></span></div>
+<div class="mrow" data-skel-row role="listitem" style="--i:2"><span class="rank">4</span><div class="who"><span class="sk t"></span><div class="nm" style="flex:1"><span class="sk l"></span></div></div><span class="num price"><span class="sk"></span></span><span class="num chg"><span class="sk"></span></span><span class="num vol"><span class="sk"></span></span><span class="num liq"><span class="sk"></span></span></div>
+<div class="mrow" data-skel-row role="listitem" style="--i:3"><span class="rank">5</span><div class="who"><span class="sk t"></span><div class="nm" style="flex:1"><span class="sk l"></span></div></div><span class="num price"><span class="sk"></span></span><span class="num chg"><span class="sk"></span></span><span class="num vol"><span class="sk"></span></span><span class="num liq"><span class="sk"></span></span></div>
+<div class="mrow" data-skel-row role="listitem" style="--i:4"><span class="rank">6</span><div class="who"><span class="sk t"></span><div class="nm" style="flex:1"><span class="sk l"></span></div></div><span class="num price"><span class="sk"></span></span><span class="num chg"><span class="sk"></span></span><span class="num vol"><span class="sk"></span></span><span class="num liq"><span class="sk"></span></span></div>
+<div class="mrow" data-skel-row role="listitem" style="--i:5"><span class="rank">7</span><div class="who"><span class="sk t"></span><div class="nm" style="flex:1"><span class="sk l"></span></div></div><span class="num price"><span class="sk"></span></span><span class="num chg"><span class="sk"></span></span><span class="num vol"><span class="sk"></span></span><span class="num liq"><span class="sk"></span></span></div>
+<div class="mrow" data-skel-row role="listitem" style="--i:6"><span class="rank">8</span><div class="who"><span class="sk t"></span><div class="nm" style="flex:1"><span class="sk l"></span></div></div><span class="num price"><span class="sk"></span></span><span class="num chg"><span class="sk"></span></span><span class="num vol"><span class="sk"></span></span><span class="num liq"><span class="sk"></span></span></div>
+<div class="mrow" data-skel-row role="listitem" style="--i:7"><span class="rank">9</span><div class="who"><span class="sk t"></span><div class="nm" style="flex:1"><span class="sk l"></span></div></div><span class="num price"><span class="sk"></span></span><span class="num chg"><span class="sk"></span></span><span class="num vol"><span class="sk"></span></span><span class="num liq"><span class="sk"></span></span></div>
+<div class="mrow" data-skel-row role="listitem" style="--i:8"><span class="rank">10</span><div class="who"><span class="sk t"></span><div class="nm" style="flex:1"><span class="sk l"></span></div></div><span class="num price"><span class="sk"></span></span><span class="num chg"><span class="sk"></span></span><span class="num vol"><span class="sk"></span></span><span class="num liq"><span class="sk"></span></span></div>
+<div class="mrow" data-skel-row role="listitem" style="--i:9"><span class="rank">11</span><div class="who"><span class="sk t"></span><div class="nm" style="flex:1"><span class="sk l"></span></div></div><span class="num price"><span class="sk"></span></span><span class="num chg"><span class="sk"></span></span><span class="num vol"><span class="sk"></span></span><span class="num liq"><span class="sk"></span></span></div>
+        </div>
+        <div class="board-err" id="boardErr" hidden>Feed unreachable. Showing the last good numbers; a retry follows shortly.</div>
+        <div class="board-foot">Raw figures from public feeds. Informational only; nothing here is advice.</div>
+      </div>
+    </div>
+
+    <!-- CREW -->
+    <div class="section" id="crew">
+      <div class="section-head" data-reveal><h3>A helper that sticks around</h3><p>Small body, long memory. Four habits define the crew.</p></div>
+      <div class="grid4">
+        <div class="card feat spot" data-reveal><i class="spotlight"></i><span class="ico">watch()</span><h4>Studies your rhythm</h4><p>Notices when you push, the tasks you skip, favourite shortcuts you keep reaching for.</p></div>
+        <div class="card feat spot" data-reveal><i class="spotlight"></i><span class="ico">notes[]</span><h4>Keeps receipts</h4><p>Every correction gets filed away for later reference, so explaining twice becomes unnecessary.</p></div>
+        <div class="card feat spot" data-reveal><i class="spotlight"></i><span class="ico">delegate()</span><h4>Takes the chores</h4><p>Inbox sorting, digests, checklists. The repetitive pile slides off your desk.</p></div>
+        <div class="card feat spot" data-reveal><i class="spotlight"></i><span class="ico">holder.only</span><h4>Answers to one key</h4><p>Exactly one key-holder steers it. Nobody else touches the wheel.</p></div>
+      </div>
+    </div>
+
+    <!-- LOOP -->
+    <div class="section" id="loop">
+      <div class="section-head" data-reveal><h3>The loop</h3><p>Four beats, looped as workload shrinks.</p></div>
+      <div class="steps" data-reveal>
+        <div class="step"><span class="n">01</span><h4>Wake</h4><p>Blocks line up, the face lights, the desk opens. <code>lops wake</code></p></div>
+        <div class="step"><span class="n">02</span><h4>Watch</h4><p>Quietly tracks your habits without crowding your attention. <code>lops watch</code></p></div>
+        <div class="step"><span class="n">03</span><h4>Assist</h4><p>Drafts, sorts and nudges, steered by earlier notes. <code>lops assist</code></p></div>
+        <div class="step"><span class="n">04</span><h4>Grow</h4><p>Every round leaves the following one sharper and shorter. <code>lops grow</code></p></div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section" id="skills">
+      <div class="section-head" data-reveal><h3>Skills</h3><p>Pocket-sized abilities that stack.</p></div>
+      <div class="grid4">
+        <div class="card feat spot" data-reveal><i class="spotlight"></i><span class="ico">/draft</span><h4>Rough to ready</h4><p>Toss over bullet scraps, receive a clean first pass that sounds like you.</p></div>
+        <div class="card feat spot" data-reveal><i class="spotlight"></i><span class="ico">/digest</span><h4>Long to short</h4><p>Sprawling threads collapse to three lines worth reading.</p></div>
+        <div class="card feat spot" data-reveal><i class="spotlight"></i><span class="ico">/sort</span><h4>Chaos to queue</h4><p>Tangled to-dos get ranked by urgency and effort.</p></div>
+        <div class="card feat spot" data-reveal><i class="spotlight"></i><span class="ico">/nudge</span><h4>Gentle taps</h4><p>Taps your shoulder shortly before something slips, never afterward.</p></div>
+      </div>
+    </div>
+
+    <!-- FLOW -->
+    <div class="section" id="flow">
+      <div class="section-head" data-reveal><h3>Flow</h3><p>One cycle, drawn flat.</p></div>
+      <div class="card flowcard spot" data-reveal>
+        <i class="spotlight"></i>
+        <pre class="flow"><span class="c-acc">watch</span> ──▶ note ──▶ <span class="c-acc">assist</span> ──▶ refine ──▶ <span class="c-acc">repeat</span></pre>
+        <a class="btn btn-ghost" href="#path">jump to path →</a>
+      </div>
+    </div>
+
+    <!-- ORIGIN -->
+    <div class="section" id="origin">
+      <div class="section-head" data-reveal><h3>Origin</h3><p>Backstory behind the grin.</p></div>
+      <div class="card lorecard spot" data-reveal>
+        <i class="spotlight"></i>
+        <img src="assets/lops-logo.png" width="160" height="160" alt="LOPS face mark" loading="lazy">
+        <div>
+          <p>It began life, quite literally, in margin scribbles: two squares and one dash. One person called it patient. Another handed over chores.</p>
+          <p class="dim">The grin stuck around. Chores multiplied.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PATH -->
+    <div class="section" id="path">
+      <div class="section-head" data-reveal><h3>Path</h3><p>Four stretches, in order.</p></div>
+      <div class="rar-strip">
+        <div class="rar spot" data-reveal><i class="spotlight"></i><div class="lbl">Boot</div><div class="pct">I</div><div class="sub">Face lights up, board goes live.</div></div>
+        <div class="rar spot" data-reveal><i class="spotlight"></i><div class="lbl">Blink</div><div class="pct">II</div><div class="sub">Habits get noticed and filed.</div></div>
+        <div class="rar spot" data-reveal><i class="spotlight"></i><div class="lbl">Stride</div><div class="pct">III</div><div class="sub">Chores migrate to crewmates.</div></div>
+        <div class="rar spot" data-reveal><i class="spotlight"></i><div class="lbl">Ship</div><div class="pct">IV</div><div class="sub">Holders steer what comes next.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer"><div class="wrap"><span>LOPS · Lops.onl · community-built</span><span>Figures arrive from open feeds. Treat them as raw signal.</span></div></footer>
+</main>
+
+<div class="statusline" aria-hidden="true">
+  <span class="mode">LOPS</span>
+  <span id="slPill">● connecting</span>
+  <span class="hide-sm">mainnet · sol</span>
+  <span class="fill"></span>
+  <span class="hide-sm" id="slSlot">slot —</span>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>

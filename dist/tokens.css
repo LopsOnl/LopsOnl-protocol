@@ -1,0 +1,43 @@
+/* ==========================================================================
+   tokens.css - the ONLY file allowed to contain colour literals.
+   Every value below was sampled from the files in brand/ and reference/
+   (analysis: IHDR colourtype, alpha histogram, dominant-pixel counts).
+   Anything else in the site is derived from these through color-mix().
+   ========================================================================== */
+:root{
+  /* reference/SAMPUL LOPS JPG - flat backdrop, 718542 of 750000 px */
+  --bg:#0a0a08;
+  /* brand/LOGO LOPS PNG...png (RGBA, colourtype 6) - ink at alpha 255, most frequent value */
+  --ink:#201410;
+  /* reference/LOPS 1..6 - dark face-block shade, most frequent dark value */
+  --tile:#3a231d;
+  /* brand/LOGO LOPS PNG.png (opaque) - most frequent pixel, the logo orange */
+  --accent:#e06848;
+  /* brand/LOGO LOPS PNG.png - second orange band */
+  --accent-mid:#da6242;
+  /* brand/LOGO LOPS PNG.png - shadow orange band */
+  --accent-deep:#c85435;
+  /* reference/SAMPUL LOPS JPG - lighter orange used on the small face blocks */
+  --accent-hi:#e97943;
+  /* reference/LOPS 1 - bright glow orange behind the 3D face */
+  --accent-glow:#f5662d;
+  /* reference/LOPS 1 - deep flame orange, most frequent deep value */
+  --flame:#d64b1e;
+  /* reference/LOPS 1 - highlight tint on the 3D block edges (lightest recurring pixel) */
+  --text:#f0d0cf;
+  /* reference/LOPS 1 - second highlight tint on the block edges */
+  --text-soft:#ecccc9;
+
+  /* derived only (no new literals) */
+  --panel:color-mix(in srgb,var(--ink) 55%,var(--bg));
+  --panel2:color-mix(in srgb,var(--ink) 80%,var(--bg));
+  --line:color-mix(in srgb,var(--tile) 55%,var(--bg));
+  --line2:color-mix(in srgb,var(--tile) 100%,var(--bg));
+  --muted:color-mix(in srgb,var(--text) 62%,var(--bg));
+  --dim:color-mix(in srgb,var(--text) 40%,var(--bg));
+  --accent-ink:var(--ink);
+  --up:var(--accent-hi);
+  --down:var(--accent-deep);
+  --glow:color-mix(in srgb,var(--accent) 16%,transparent);
+  --shadow:color-mix(in srgb,var(--bg) 70%,transparent);
+}

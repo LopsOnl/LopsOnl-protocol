@@ -1,0 +1,15 @@
+{
+  "name": "lops",
+  "version": "0.1.0",
+  "private": true,
+  "description": "LOPS - a small blocky AI operator on Solana. Site: Lops.onl",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "verify": "node scripts/verify.mjs"
+  },
+  "devDependencies": {
+    "pngjs": "^7.0.0"
+  },
+  "license": "MIT"
+}
